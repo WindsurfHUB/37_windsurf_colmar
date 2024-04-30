@@ -86,8 +86,13 @@ h1 {
 }
 
 .button {
+  display: block;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  padding: 8px 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-decoration: none;
   background-color: #88857f;
   color: black;
   transition: ease 0.3s all;
@@ -96,3 +101,226 @@ h1 {
   }
 }
 
+/*section 2*/
+
+.container-2 {
+  display: flex;
+  width: 100%;
+  padding: 32px 0;
+  background-color: #dbdbdb;
+}
+
+.hero2-left {
+  width: 60%;
+  img {
+    max-width: 100%;
+    padding: 0 24px 0 24px;
+  }
+  .hero2-left-d {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    gap: 24px;
+  }
+  .h2-ld {
+    font-size: 50px;
+  }
+  .h2-ldp {
+    font-size: 20px;
+    word-spacing: 0.15rem;
+    padding: 1.5rem 0;
+  }
+}
+
+.h2-l-foot {
+  padding-bottom: 4rem;
+}
+
+.hero2-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  border: 1px solid rgb(177, 177, 177);
+  transition: ease 0.3s all;
+  &:hover {
+    background-color: rgb(157, 155, 155);
+  }
+  img {
+    max-width: 35%;
+    padding: 16px;
+  }
+  .i-card {
+    width: 100%;
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.card-1 {
+  display: flex;
+  width: 100%;
+  border: 1px solid rgb(177, 177, 177);
+  transition: ease 0.3s all;
+  &:hover {
+    background-color: rgb(157, 155, 155);
+  }
+  img {
+    max-width: 35%;
+    padding: 0 16px 16px 16px;
+  }
+  .i-card-1 {
+    width: 100%;
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* container 3 */
+
+.container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem 4.5rem;
+  background-color: #f2f2f2;
+}
+
+.c3-head {
+  font-size: 50px;
+  padding: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.course-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.33% - 16px); /* thank to gemini fro this line🙇 */
+  margin-bottom: 16px;
+  margin-left: 16px;
+  background-color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.course-box img {
+  width: 100%;
+  height: auto;
+}
+
+.course-box p {
+  margin: 8px 0 8px 16px;
+}
+
+.course-box h2 {
+  padding: 16px;
+}
+
+/* container 4 */
+
+.c4-head {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.container-4-1 {
+  display: flex;
+  width: 100%;
+}
+
+.c4-l-d {
+  display: flex;
+  flex-direction: column;
+}
+
+.c4-right {
+  width: 40%;
+}
+
+.c4-left {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  video {
+    max-width: 100%;
+    padding: 0 24px 32px 24px;
+  }
+}
+
+.c4-l-h3 {
+  padding: 1.5px 0 0 1.5rem;
+}
+
+.c4-l-p {
+  padding: 0.5rem 1.5rem 2rem 1.5rem;
+}
+
+.c4-card-l {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  padding: 0 1rem 1rem 1rem;
+  transition: ease 0.3s all;
+  &:hover {
+    background-color: rgb(157, 155, 155);
+  }
+  img {
+    height: auto;
+    width: 35%;
+  }
+}
+
+.c4-card-l-2 {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  padding: 1rem;
+  transition: ease 0.3s all;
+  &:hover {
+    background-color: rgb(157, 155, 155);
+  }
+  img {
+    height: auto;
+    width: 35%;
+  }
+}
+
+.c4-card-l-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.c4-card-l-1 p {
+  padding-top: 1rem;
+}
+
+/* footer */
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #88857f;
+  .ul-2 {
+    display: flex;
+    list-style-type: none;
+  }
+}
